@@ -1,0 +1,1 @@
+import{F as s}from"./Ci0L87As.js";import{g as o}from"./D-b10XOD.js";import{c as a}from"./-E0W3RGm.js";function l(r){let t;const c=a(e=>{let u=!1;const i=r.subscribe(f=>{t=f,u&&e()});return u=!0,i});function n(){return s()?(c(),t):o(r)}return"set"in r?{get current(){return n()},set current(e){r.set(e)}}:{get current(){return n()}}}export{l as f};

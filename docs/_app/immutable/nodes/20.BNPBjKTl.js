@@ -1,0 +1,1 @@
+import"../chunks/DCc8BDl0.js";import{A as o}from"../chunks/hA7vxaSw.js";import{S as i}from"../chunks/CYpz32fx.js";function m(e){i(e,{title:"Gemachtigde toevoegen",closeHref:"/political-group/authorised-agents",children:(t,r)=>{o(t,{title:"Gemachtigde toevoegen",submitLabel:"Opslaan"})},$$slots:{default:!0}})}export{m as component};

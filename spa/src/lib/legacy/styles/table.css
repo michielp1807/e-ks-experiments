@@ -1,0 +1,77 @@
+table {
+  color: var(--color-help-text);
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0 var(--space-ml);
+    line-height: var(--font-size-lg);
+    border-bottom: 1px solid var(--bg-gray-darkest);
+  }
+
+  th {
+    height: 2.75rem;
+    text-align: left;
+    font-size: var(--font-size-xs);
+
+    a {
+      color: var(--color-help-text);
+      text-decoration: none;
+
+      &:hover,
+      &:visited,
+      &:focus {
+        color: var(--color-help-text);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  td {
+    height: 3rem;
+    font-size: var(--font-size-lg);
+  }
+
+  tr.warning:not(.exceeded) {
+    background-image: url("../icons/warning.svg");
+    background-repeat: no-repeat;
+    background-position: right 3.5rem center;
+  }
+
+  tr.highlighted {
+    background-color: var(--yellow-100);
+
+    .position-badge {
+      background-color: var(--yellow-200);
+    }
+  }
+
+  tr.clickable {
+    td:last-child {
+      text-align: right;
+
+      a,
+      button {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        background-image: url("../icons/chevronRight.svg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        height: 1em;
+        width: var(--space-xxl);
+        cursor: pointer;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.position-badge,
+.person-badge {
+  display: inline-block;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  line-height: var(--badge-size);
+  text-align: center;
+  border-radius: var(--rounded-sm);
+  transition: background-color 0.5s ease-in-out;
+
+  font-family: var(--font-header);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  background-color: var(--blue-200);
+}
+
+.person-badge {
+  vertical-align: middle;
+  background-image: url("../icons/politician-badge.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: var(--badge-size) var(--badge-size);
+}
+
+h2 {
+  .position-badge,
+  .person-badge {
+    margin-right: var(--space-sm);
+    font-size: var(--font-size-xl);
+    color: var(--text-color-body);
+    width: var(--badge-size-lg);
+    height: var(--badge-size-lg);
+    line-height: var(--badge-size-lg);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,229 @@
+body {
+	min-width: 0;
+}
+
+body:has(.spa-overlay-backdrop) {
+	overflow: hidden;
+}
+
+.page-header {
+	background: var(--base-white);
+	border-bottom: 1px solid var(--gray-200);
+}
+
+.page-header-districts {
+	margin-top: var(--space-sm);
+}
+
+.stack-lg {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-lg);
+}
+
+.stack-md {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-md);
+}
+
+.manager-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--space-lg);
+}
+
+.plain-card {
+	grid-column: span 1;
+	padding-top: var(--space-lg);
+}
+
+.summary-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 var(--space-lg);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-md);
+}
+
+.summary-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: var(--space-md);
+	padding-bottom: var(--space-md);
+	border-bottom: 1px solid var(--gray-200);
+}
+
+.compact-form {
+	margin-top: auto;
+}
+
+.editable-block {
+	display: block;
+	text-decoration: none;
+}
+
+.editable-block .buttons,
+.form .buttons,
+.stack-lg>.form>.buttons,
+.stack-md>.form>.buttons {
+	margin-block: var(--space-md);
+}
+
+.step-panel {
+	min-width: 18rem;
+	padding: var(--space-lg);
+	background: var(--base-white);
+	border: 1px solid var(--gray-200);
+	border-radius: var(--rounded-default);
+	height: fit-content;
+}
+
+.status-pill {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.5rem 0.75rem;
+	border-radius: 999px;
+	font-size: var(--font-size-sm);
+	font-weight: 600;
+}
+
+.status-pill.complete {
+	background: var(--green-100);
+	color: var(--green-800);
+}
+
+.status-pill.warning {
+	background: var(--orange-100);
+	color: var(--orange-800);
+}
+
+.toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--space-md);
+	margin-bottom: var(--space-lg);
+}
+
+.toolbar .form-field {
+	margin: 0;
+}
+
+.table-actions {
+	display: flex;
+	gap: var(--space-sm);
+}
+
+.candidate-list-summary-row {
+	grid-template-columns: minmax(20rem, 24rem) minmax(0, 1fr);
+	gap: var(--space-lg);
+}
+
+.candidate-list-summary-card,
+.candidate-pool-card {
+	grid-column: span 1;
+}
+
+.candidate-pool-card {
+	padding-top: var(--space-lg);
+}
+
+.candidate-list-detail-panel,
+.candidate-list-create {
+	min-width: 0;
+}
+
+.candidate-list-create .card {
+	grid-column: span 1;
+	max-width: 32rem;
+}
+
+.cards.cards-candidate-lists.cards-submit .cards-right {
+	grid-column: 1 / -1;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.cards.cards-candidate-lists.cards-submit .card {
+	grid-column: span 4;
+}
+
+.cards.cards-candidate-lists.cards-submit .card-actions + .instruction {
+	margin-top: var(--space-lg);
+}
+
+.candidate-edit-title {
+	display: flex;
+	align-items: center;
+	gap: var(--space-sm);
+	font-size: var(--font-size-lg);
+	margin-bottom: var(--space-lg);
+}
+
+#position-preview tr.current {
+	background-color: var(--yellow-100);
+}
+
+#position-preview tr.current .position-badge {
+	background-color: var(--yellow-200);
+}
+
+.spa-overlay-backdrop {
+	position: fixed;
+	inset: 0;
+	padding: var(--space-lg);
+	overflow-y: auto;
+}
+
+.spa-overlay {
+	min-height: calc(100vh - 2 * var(--space-lg));
+}
+
+.card .card-actions:last-child,
+.plain-card>*:last-child {
+	margin-top: 0;
+}
+
+@media (max-width: 1100px) {
+
+	header nav,
+	.page-header,
+	main,
+	footer {
+		padding-left: var(--space-lg);
+		padding-right: var(--space-lg);
+	}
+
+	.page-header {
+		padding-left: var(--space-lg);
+		padding-right: var(--space-lg);
+	}
+
+	.cards.cards-home,
+	.cards.cards-candidate-lists,
+	.manager-grid,
+	.candidate-list-summary-row {
+		grid-template-columns: 1fr;
+	}
+
+	.cards.cards-candidate-lists.cards-submit .cards-right,
+	.cards.cards-candidate-lists .cards-right {
+		grid-column: span 12;
+		grid-template-columns: 1fr;
+	}
+
+	.card,
+	.plain-card {
+		grid-column: span 1;
+	}
+
+	main>.steps,
+	.summary-list li,
+	.toolbar,
+	header nav {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
