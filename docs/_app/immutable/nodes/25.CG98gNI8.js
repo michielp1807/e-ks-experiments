@@ -1,0 +1,1 @@
+import"../chunks/4Yu60VtO.js";import{L as r}from"../chunks/GECWoSi7.js";import{S as o}from"../chunks/CNArcL7R.js";function m(t){o(t,{title:"Vervanger voor het herstel van verzuimen",closeHref:"/political-group/list-submitters",children:(e,s)=>{r(e,{substitute:!0,submitLabel:"Opslaan"})},$$slots:{default:!0}})}export{m as component};

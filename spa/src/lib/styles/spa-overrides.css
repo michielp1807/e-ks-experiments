@@ -221,8 +221,7 @@ body:has(.spa-overlay-backdrop) {
 
 	main>.steps,
 	.summary-list li,
-	.toolbar,
-	header nav {
+	.toolbar {
 		flex-direction: column;
 		align-items: stretch;
 	}

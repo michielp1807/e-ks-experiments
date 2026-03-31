@@ -1,0 +1,1 @@
+import"../chunks/4Yu60VtO.js";import{L as o}from"../chunks/GECWoSi7.js";import{S as r}from"../chunks/CNArcL7R.js";function m(t){r(t,{title:"Lijstinleveraar toevoegen",closeHref:"/political-group/list-submitters",children:(e,i)=>{o(e,{submitLabel:"Opslaan"})},$$slots:{default:!0}})}export{m as component};
